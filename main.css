@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* ***************** 
+Color
+***************** */
+.gray-blue {
+  color: hsl(217, 19%, 35%);
+}
+
+.gray-blue2 {
+  color: hsl(212, 23%, 69%);
+}
+
+.dark-blue {
+  color: hsl(214, 17%, 51%);
+}
+
+.light-gray {
+  color: hsl(210, 46%, 95%);
+}
+
