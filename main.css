@@ -5,9 +5,15 @@
 }
 
 body {
+  background:hsl(210, 46%, 95%);
   font-family: 'Manrope', sans-serif;
   font-size: 13px;
   font-weight: 500;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ***************** 
@@ -29,3 +35,103 @@ Color
   color: hsl(210, 46%, 95%);
 }
 
+
+/* ***************** 
+Article 
+***************** */
+.container {
+  border: none;
+  border-radius: 10px;
+  background: #fff;
+  max-width: 800px; 
+  display: flex;
+  overflow: hidden;
+}
+
+/* ***************** 
+Left Container
+***************** */
+.left-container {
+  background: url(images/drawers.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50%;
+}
+
+.left-container img {
+  width: 100%;
+}
+
+/* ***************** 
+Right Container
+***************** */
+.right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 50px;
+  width: 70%;
+}
+
+.right-container h1 {
+  width: 367px;
+}
+
+.right-container h1 {
+  color:hsl(217, 19%, 35%);
+}
+
+.right-container p {
+  margin: 15px 0;
+  line-height: 20px;
+}
+
+.right-container p {
+  color:hsl(214, 17%, 51%);
+}
+
+/* ***************** 
+Right Container: 
+Profile Name
+***************** */
+.profile {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.profile-name {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px; 
+  margin-right: 160px;
+  color:hsl(212, 23%, 69%);
+}
+
+.profile-name span {
+  margin-bottom: 3px;
+  font-weight: 700;
+  color:hsl(217, 19%, 35%);
+}
+
+.profile img,
+.profile button {
+  border-radius: 50%;
+  border:none;
+}
+
+.profile img{
+  width: 40px;
+  height: 40px;
+}
+
+.profile button {
+  width: 30px;
+  height: 30px;
+}
+
+.profile button img {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
