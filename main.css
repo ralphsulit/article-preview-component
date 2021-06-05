@@ -35,16 +35,14 @@ Color
   color: hsl(210, 46%, 95%);
 }
 
-
 /* ***************** 
-Article 
+Container
 ***************** */
 .container {
+  width: 300px;
   border: none;
   border-radius: 10px;
   background: #fff;
-  max-width: 800px; 
-  display: flex;
   overflow: hidden;
 }
 
@@ -55,45 +53,31 @@ Left Container
   background: url(images/drawers.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 50%;
-}
-
-.left-container img {
-  width: 100%;
+  width: 300px;
+  height: 200px;
 }
 
 /* ***************** 
 Right Container
 ***************** */
 .right-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 50px 50px;
-  width: 70%;
-}
-
-.right-container h1 {
-  width: 367px;
+  padding: 40px 25px;
 }
 
 .right-container h1 {
   color:hsl(217, 19%, 35%);
+  font-size: 1.2em;
 }
 
 .right-container p {
-  margin: 15px 0;
-  line-height: 20px;
-}
-
-.right-container p {
+  padding: 15px 0;
   color:hsl(214, 17%, 51%);
 }
 
-/* ***************** 
-Right Container: 
-Profile Name
-***************** */
+.profile {
+  display: flex;
+}
+
 .profile {
   display: flex;
   align-items: center;
@@ -102,9 +86,9 @@ Profile Name
 
 .profile-name {
   display: flex;
+  width: 200px;
   flex-direction: column;
   margin-left: 15px; 
-  margin-right: 160px;
   color:hsl(212, 23%, 69%);
 }
 
@@ -134,4 +118,58 @@ Profile Name
   width: 15px;
   height: 15px;
   cursor: pointer;
+}
+
+/* ***************** 
+Media Query: 
+Mobile
+***************** */
+@media (min-width: 1440px) {
+  /* ***************** 
+  Article 
+  ***************** */
+  .container {
+    width: 800px; 
+    display: flex;
+  }
+
+  /* ***************** 
+  Left Container
+  ***************** */
+  .left-container {
+    background: url(images/drawers.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+  }
+
+
+  /* ***************** 
+  Right Container
+  ***************** */
+  .right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+  }
+
+  .right-container h1 {
+    width: 367px;
+    font-size: 1.5em;
+  }
+
+  .right-container p {
+    margin: 15px 0;
+    line-height: 20px;
+  }
+
+  /* ***************** 
+  Right Container: 
+  Profile Name
+  ***************** */
+  .profile-name {
+    margin-right: 160px;
+  }
 }
