@@ -39,7 +39,7 @@ Color
 Container
 ***************** */
 .container {
-  width: 300px;
+  width: 325px;
   border: none;
   border-radius: 10px;
   background: #fff;
@@ -53,25 +53,27 @@ Left Container
   background: url(images/drawers.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 300px;
-  height: 200px;
+  height: 216px;
 }
 
 /* ***************** 
 Right Container
 ***************** */
 .right-container {
-  padding: 40px 25px;
+  padding: 20px 40px;
 }
 
 .right-container h1 {
   color:hsl(217, 19%, 35%);
   font-size: 1.2em;
+  line-height: 25px;
 }
 
 .right-container p {
   padding: 15px 0;
   color:hsl(214, 17%, 51%);
+  line-height: 20px;  
+  margin-bottom: 20px;
 }
 
 .profile {
@@ -119,6 +121,49 @@ Right Container
   height: 15px;
   cursor: pointer;
 }
+
+/* ***************** 
+Social Media Icons
+***************** */
+.social-media {
+  /* margin-top: -70px; */
+}
+
+.wrapper {
+  background:hsl(217, 19%, 35%);
+  padding: 15px 25px;
+  display: flex;
+  align-items: center;
+}
+
+.socials {
+  display: flex;
+  margin-left: 10px;
+  margin-right: 50px;
+}
+
+.wrapper h4 {
+  text-transform: uppercase;
+  font-weight: 100;
+  color:hsl(212, 23%, 69%);
+  letter-spacing: 5px;
+}
+
+.social-media button {
+  padding: 8px 8px;
+  border: none;
+  border-radius: 50%;
+  /* background: hsl(214, 17%, 51%); */
+}
+
+
+.socials img {
+  padding: 0 8px;
+  width: 35px;
+  height: 18px;
+}
+
+
 
 /* ***************** 
 Media Query: 
