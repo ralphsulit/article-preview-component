@@ -76,6 +76,9 @@ Right Container
   margin-bottom: 20px;
 }
 
+/* ***************** 
+Profile
+***************** */
 .profile {
   display: flex;
 }
@@ -125,8 +128,12 @@ Right Container
 /* ***************** 
 Social Media Icons
 ***************** */
+#social {
+  display: none;
+}
+
 .social-media {
-  /* margin-top: -70px; */
+  margin-top: -20px;
 }
 
 .wrapper {
@@ -140,6 +147,7 @@ Social Media Icons
   display: flex;
   margin-left: 10px;
   margin-right: 50px;
+  cursor: pointer;
 }
 
 .wrapper h4 {
@@ -153,7 +161,7 @@ Social Media Icons
   padding: 8px 8px;
   border: none;
   border-radius: 50%;
-  /* background: hsl(214, 17%, 51%); */
+  cursor: pointer;
 }
 
 
@@ -217,4 +225,5 @@ Mobile
   .profile-name {
     margin-right: 160px;
   }
+
 }
